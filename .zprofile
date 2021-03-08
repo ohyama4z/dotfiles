@@ -1,1 +1,1 @@
-/home/ohyama4z/.zprezto/runcoms/zprofile
+.zprezto/runcoms/zprofile

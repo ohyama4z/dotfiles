@@ -1,1 +1,1 @@
-/home/ohyama4z/.zprezto/runcoms/zlogout
+.zprezto/runcoms/zlogout

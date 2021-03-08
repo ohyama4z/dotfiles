@@ -1,1 +1,1 @@
-/home/ohyama4z/.zprezto/runcoms/zlogin
+.zprezto/runcoms/zlogin
