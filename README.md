@@ -1,6 +1,7 @@
 # dotfiles
 
 ```sh
-% git clone https://github.com/ohyama4z/dotfiles.git
-% ln -fs dotfiles/.(*~git~gitmodules~gitignore) .
+% git clone --recursive https://github.com/ohyama4z/dotfiles.git
+% chmod +x install.sh
+% ./install.sh
 ```
