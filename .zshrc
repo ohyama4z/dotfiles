@@ -15,7 +15,8 @@ fi
 # ビープ音を消す
 setopt no_beep
 
-
+# ~/.dircolorからlsの色を設定
+eval $(dircolors -b ~/.dircolor)
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/ohyama4z/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ohyama4z/google-cloud-sdk/path.zsh.inc'; fi
@@ -23,4 +24,5 @@ if [ -f '/home/ohyama4z/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ohyama4z
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/ohyama4z/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ohyama4z/google-cloud-sdk/completion.zsh.inc'; fi
 
+# gcloudのパス通す
 export PATH="$PATH:$HOME/google-cloud-sdk/bin/gcloud"
