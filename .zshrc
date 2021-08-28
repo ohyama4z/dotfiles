@@ -26,3 +26,9 @@ if [ -f '/home/ohyama4z/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/oh
 
 # gcloudのパス通す
 export PATH="$PATH:$HOME/google-cloud-sdk/bin/gcloud"
+
+export GOPATH="$HOME/go"
+
+export PATH=$PATH:$GOPATH/bin
+
+export PATH=$PATH:/usr/local/go/bin
