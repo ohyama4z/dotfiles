@@ -37,3 +37,18 @@ zinit ice pick"async.zsh" src"pure.zsh" # with zsh-async library that's bundled 
 zinit light sindresorhus/pure
 
 setopt no_beep
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# the sed invocation inserts the lines at the start of the file
+# after any initial comment lines
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+eval "$(pyenv virtualenv-init -)"
+
+# emacsはCLI上から使う
+alias emacs="emacs -nw"
+
