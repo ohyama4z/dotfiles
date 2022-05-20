@@ -16,8 +16,9 @@
 ;; help
 (global-set-key "\C-c\C-h" 'help-command)
 
-;; 列番号つける
-(column-number-mode t)
+;; 行番号の表示
+(global-linum-mode)
+(setq linum-format "%4d ")
 
 ;; カッコの自動補完
 (electric-pair-mode 1)
@@ -27,3 +28,6 @@
 ;; バックアップファイルを作らない
 (setq make-backup-files nil)
 (setq make-save-files nil)
+
+;; カラーテーマの設定
+(load-theme 'deeper-blue t)
