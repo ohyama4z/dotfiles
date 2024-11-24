@@ -52,10 +52,10 @@ alias emacs="emacs -nw"
 # WSL向けいろいろ
 function open() {
     if [[ $# -lt 1 ]] then
-       powershell.exe Invoke-Item .
+       pwsh.exe Invoke-Item .
        return
     fi
-    powershell.exe Invoke-Item $1
+    pwsh.exe Invoke-Item $1
 }
 
 alias clip="clip.exe"
@@ -70,5 +70,7 @@ unalias go
 export PATH=$PATH:/usr/local/go/bin
 
 export VOLTA_FEATURE_PNPM=1
+
+
 
 

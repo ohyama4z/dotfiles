@@ -1,3 +1,4 @@
 elpa/
 *.elc
 .emacs.d/eshell
+.emacs.d/auto-save-list

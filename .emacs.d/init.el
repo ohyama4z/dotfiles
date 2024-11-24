@@ -61,7 +61,7 @@
 
 (setq interprogram-paste-function
       (lambda ()
-        (shell-command-to-string "powershell.exe -Command Get-Clipboard")))
+        (shell-command-to-string "pwsh.exe -Command Get-Clipboard")))
 
 (require 'package)
 (add-to-list 'package-archives
