@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/oy4z/completions:"* ]]; then export FPATH="/home/oy4z/completions:$FPATH"; fi
 ### Added by Zinit's installerln
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
     print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
@@ -52,10 +54,10 @@ alias emacs="emacs -nw"
 # WSL向けいろいろ
 function open() {
     if [[ $# -lt 1 ]] then
-       pwsh.exe Invoke-Item .
+       pwsh.exe -Command Invoke-Item .
        return
     fi
-    pwsh.exe Invoke-Item $1
+    pwsh.exe -Command Invoke-Item $1
 }
 
 alias clip="clip.exe"
@@ -74,3 +76,5 @@ export VOLTA_FEATURE_PNPM=1
 
 
 
+. "/home/oy4z/.deno/env"
+source /opt/ros/humble/setup.zsh
