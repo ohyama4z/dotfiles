@@ -1,0 +1,6 @@
+[data]
+{{- $isWsl := false }}
+{{- if stat "/proc/sys/fs/binfmt_misc/WSLInterop" }}
+{{-   $isWsl = true }}
+{{- end }}
+    isWsl = {{ $isWsl }}
