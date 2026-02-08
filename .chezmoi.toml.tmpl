@@ -1,3 +1,7 @@
+[edit]
+    command = "emacs"
+    args = ["-nw"]
+
 [data]
 {{- $isWsl := false }}
 {{- if stat "/proc/sys/fs/binfmt_misc/WSLInterop" }}

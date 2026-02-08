@@ -22,18 +22,6 @@ zinit light sindresorhus/pure
 # Options
 setopt no_beep
 
-# PATH
-export PATH="$HOME/.local/bin:$PATH"
-
-# mise (version manager)
-if command -v mise &> /dev/null; then
-    eval "$(mise activate zsh)"
-fi
-
-# Volta
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
 # Aliases
 alias emacs="emacs -nw"
 
@@ -49,3 +37,6 @@ function open() {
 
 alias clip="clip.exe"
 {{- end }}
+
+# マシン固有の設定（PATH等）
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
