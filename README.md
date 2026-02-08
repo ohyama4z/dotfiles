@@ -12,14 +12,6 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- -b ~/.local/bin
 chezmoi init --apply <github-username>
 ```
 
-## 含まれる設定
-
-- `.zshrc` - Zsh設定（Zinit, pure theme, autosuggestions, syntax-highlighting）
-- `.gitconfig` - Git設定
-- `.emacs.d/` - Emacs設定
-- `.config/mise/` - mise設定
-- `.config/git/ignore` - グローバルgitignore
-
 ## マシン固有の設定
 
 PATH設定などマシン固有の設定は `~/.zshrc.local` に記述してください（管理対象外）。
